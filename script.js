@@ -18,3 +18,50 @@ for(const button of allButton){
 // accessing elements by their id
 const prime = document.getElementById('prime');
 //console.log(prime) */
+
+// counting full code
+/* let count = 0;
+// add function
+document.getElementById('add').addEventListener('click', function(e){
+    // function test
+    // console.log('is add working?')
+    count++;
+    // count = count + 1;
+    //console.log(count)
+    document.getElementById('count').innerText = count;
+})
+// minus function
+document.getElementById('minus').addEventListener('click', function(e){
+    // function test
+    // console.log('is minus working?')
+    //count--;
+    count = count - 1;
+    //console.log(count)
+    document.getElementById('count').innerText = count;
+}) */
+
+// optimizing count code
+let count = 0;
+// add with function call onclick inside button
+function add(event){
+    // handle negative value
+    if(count <= 0){
+        count = 0;
+    }
+    count++;
+    control('count')// function call
+}
+// minus with function call onclick inside button
+function minus(event){
+    // handle negative value
+    if(count <= 0){
+        count = 1;
+    }
+    count--;
+    control('count')// function call
+}
+// optimize the code for similer with function call
+function control(id){
+    document.getElementById(id).innerText = count;
+    
+}
