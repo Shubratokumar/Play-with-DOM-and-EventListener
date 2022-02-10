@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2 class="text-center mt-5">To Do List</h2>
-    <div class="text-center container w-50 m-auto mt-5">
+    <div class="text-center container w-75 m-auto mt-5">
         <!-- input for adding items -->
         <div class="input-group mt-5">
             <input id="input-value" style="resize: none;" class="form-control" aria-label="With textarea"></input>
@@ -25,14 +25,21 @@
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
-                <tbody >
-                  <tr>
+                <tbody id="content-container">
+                <!-- This tr is no need as we create element -->
+                  <!-- <tr id="table-content">
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
-                  </tr>
+                  </tr> -->
+                  
                 </tbody>
+                <!-- <tfoot>
+                  <button id="clear-btn" class="btn btn-danger">Clear All</button>
+                </tfoot> -->
+
               </table>
+              
         </div>
     </div>
     <!-- add external script -->
